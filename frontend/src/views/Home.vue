@@ -115,16 +115,6 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
 import { useRouter } from 'vue-router';
-import { 
-  ShoppingCart, 
-  DataAnalysis, 
-  View, 
-  Camera,
-  Star,
-  TrendCharts,
-  Connection,
-  Monitor
-} from '@element-plus/icons-vue';
 import NavBar from '../components/NavBar.vue';
 import { useProductStore } from '../store/product';
 import type { Product } from '../types/product';

@@ -182,14 +182,13 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted, watch } from 'vue';
+import { ref, onMounted, watch } from 'vue';
 import { useRoute } from 'vue-router';
 import { Grid, List, Filter } from '@element-plus/icons-vue';
 import { useProductStore } from '../store/product';
 import NavBar from '../components/NavBar.vue';
 import ProductCard from '../components/ProductCard.vue';
 import { storeToRefs } from 'pinia';
-import type { Product } from '@/types/product';
 
 const productStore = useProductStore();
 const { products, total } = storeToRefs(productStore);
@@ -258,7 +257,7 @@ const handleSizeChange = (val: number) => {
   fetchData(true);
 };
 
-const handleCurrentChange = (val: number) => {
+const handleCurrentChange = () => {
   fetchData(false);
 };
 

@@ -30,7 +30,7 @@ export const useUserStore = defineStore('user', () => {
   
   async function register(data: any) {
     try {
-      const response = await apiRegister(data);
+      await apiRegister(data);
       
       // 注册成功
       notificationStore.addNotification({ 

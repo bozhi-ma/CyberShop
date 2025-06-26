@@ -36,10 +36,6 @@ const favoriteList = computed(() => favoriteStore.favoriteList);
 const goToProducts = () => {
   router.push('/products');
 };
-
-const goToHome = () => {
-  router.push('/');
-};
 </script>
 
 <style scoped>

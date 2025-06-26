@@ -68,7 +68,6 @@
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { useSearchStore } from '../store/search'
-import { searchProducts } from '../api/product'
 
 // Pinia搜索store实例
 const searchStore = useSearchStore()

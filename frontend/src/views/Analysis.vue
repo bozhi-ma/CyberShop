@@ -455,7 +455,7 @@ const exportData = () => {
 };
 
 // 实时数据更新
-let timer: number | undefined;
+let timer: any;
 onMounted(() => {
   timer = setInterval(() => {
     onlineUsers.value = Math.floor(Math.random() * 500) + 1000;

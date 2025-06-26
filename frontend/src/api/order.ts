@@ -1,8 +1,7 @@
 // 订单相关API接口
-import request from './request';
 
 // 获取订单列表
-export async function getOrderList(params: any) {
+export async function getOrderList(_params: any) {
   // mock: 实际应为 request.get('/orders', { params })
   return Promise.resolve({
     list: [
@@ -38,13 +37,13 @@ export async function getOrderDetail(id: number) {
 }
 
 // 取消订单
-export async function cancelOrder(id: number) {
+export async function cancelOrder(_id: number) {
   // mock: 实际应为 request.post(`/orders/${id}/cancel`)
   return Promise.resolve({ success: true });
 }
 
 // 再次购买
-export async function reorder(id: number) {
+export async function reorder(_id: number) {
   // mock: 实际应为 request.post(`/orders/${id}/reorder`)
   return Promise.resolve({ success: true });
 } 
